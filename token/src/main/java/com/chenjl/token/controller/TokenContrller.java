@@ -18,6 +18,7 @@ public class TokenContrller {
 
     @GetMapping("/booleanToken")
     public boolean booleanToken(@RequestParam String token) {
+        System.out.println(123);
         return token .equals(SchedulingToken.getSchedulingToken()) ? true : false;
     }
 
